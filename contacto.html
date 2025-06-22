@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TecnoRed 360°</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="media/logo.png" type="image/png">
+</head>
+<body>
+    <header class="main-header">
+        <h1 style="color: white; font-weight: bold;">
+            Tecno<span style="color: #d62828; font-weight: bold;">Red</span> 360°
+        </h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html">Quiénes Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="especializacion.html">Especialización</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto" class="contact section">
+        <h2>Contáctanos</h2>
+        <p>Puedes comunicarte con nosotros directamente a través del siguiente formulario:</p>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="social-media">
+            <h3>Síguenos en nuestras redes sociales:</h3>
+            <div class="footer-social" style="justify-content:center; margin-bottom:20px;">
+                <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="media/logo3PW.png" alt="TecnoRed 360° Logo">
+            </div>
+            <div class="footer-info">
+                <p><strong>Contacto:</strong></p>
+                <p><i class="fas fa-phone"></i> 68018351 - 62409894 - 69785466 (BO +591)</p>
+                <p><i class="fas fa-envelope"></i> info@tecnored360.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> La Paz, Bolivia</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/TecnoRed360"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.link/y9vlfd"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TecnoRed 360°. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Menú hamburguesa responsive
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
